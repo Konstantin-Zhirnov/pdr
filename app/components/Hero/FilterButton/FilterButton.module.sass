@@ -1,0 +1,53 @@
+.btn
+  position: relative
+  padding: 0 20px
+  height: 46px
+  justify-content: flex-start
+  background: transparent
+  border-radius: 10px
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 6px
+  cursor: pointer
+  color: white
+  border: 1px solid #fff
+  font-size: 1rem
+  flex: 1
+  min-width: 45%
+
+  .figure
+    position: absolute
+    left: 20px
+    height: 12px
+    width: 12px
+    opacity: 0
+    transform: translateX(-100%) rotate(-45deg)
+    background: linear-gradient(180deg, #ffb800 0%, #ff8a00 100%)
+
+  &.active, &:hover
+    border: 1px solid #FFB800
+    .figure
+      transform: translateX(0) rotate(-45deg)
+      opacity: 1
+    .text
+      color: #ffb800
+      transform: translateX(25px)  
+
+
+  & > *
+    transition: transform 0.25s, opacity 0.35s, color 0.2s
+
+
+@media screen and (max-width: 960px)
+  .btn
+    min-width: 166px
+
+@media screen and (max-width: 640px)
+  .btn
+    min-width: 140px  
+    font-size: 0.86rem  
+    padding: 0 16px
+    .figure
+     left: 16px
+ 

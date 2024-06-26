@@ -1,0 +1,62 @@
+.hero
+  margin-bottom: 3rem
+  min-height: calc(100vh - 52px)
+
+  .title
+    font-size: clamp(2rem,calc(1rem + 5.4vw),4.75rem)
+    color: #ffb800
+    padding: 4rem 0
+    text-transform: uppercase
+
+  .container
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    width: 100%
+
+    .buttons
+      width: 30%
+      min-width: 400px
+      display: flex
+      flex-wrap: wrap
+      gap: 2rem
+      justify-content: space-between
+      align-content: flex-start
+
+    .car
+      flex: 1
+      z-index: -1
+
+      .image
+        width: 100%
+        margin-top: -6rem
+
+@media screen and (max-width: 960px)
+  .hero .container
+    flex-direction: column
+
+    .buttons
+      min-width: 166px
+      width: 100%     
+
+@media screen and (max-width: 767px)
+  .hero .container .car .image
+    margin-top: -4rem 
+
+@media screen and (max-width: 640px)
+  .hero .container
+    .car .image
+      margin-top: 0  
+
+    .buttons
+      gap: 1rem
+
+@media screen and (max-width: 460px)
+  .hero .container .car .image
+      margin-top: 0.6rem
+
+@media screen and (max-width: 390px)
+  .hero .container .car .image
+      margin-top: 1.2rem          
+      
+     

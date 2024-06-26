@@ -1,0 +1,43 @@
+.container
+  margin-bottom: 10rem
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  gap: 2rem
+  
+  .alert
+    position: relative
+    padding: 15px 18px
+    width: 580px
+    margin: 0 0.6rem
+    
+    img
+      position: absolute
+      top: 0
+      left: 0
+      transform: translate(-40%, -40%)
+      z-index: 2
+
+    .text
+      font-size: var(--index)
+      color: white
+
+    &::after
+      position: absolute
+      content: ""
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      padding: 1.5px
+      background: linear-gradient(170deg, #ffb800, rgba(255, 184, 0, 0) 80%)
+      border-radius: 10px
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+      -webkit-mask-composite: xor
+      mask-composite: exclude
+
+
+
+
+
+
