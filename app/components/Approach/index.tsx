@@ -29,7 +29,7 @@ const Approach: React.FC = () => {
         whileInView="visible"
         variants={animation}
       >
-        Paintless dent removal is a service for repairing car body damage without affecting the
+        Paintless dent repair is a service for repairing car body damage without affecting the
         paint. Our company&apos;s specialists restore the car to its original appearance without the
         need for expensive and time-consuming repainting and without any signs of repair. We do this
         quickly, affordably, and with a quality guarantee. We use innovative PDR technology,
