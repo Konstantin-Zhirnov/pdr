@@ -35,6 +35,15 @@ const Approach: React.FC = () => {
         quickly, affordably, and with a quality guarantee. We use innovative PDR technology,
         offering a fast, efficient, and cost-effective solution for removing dents and damage.
       </motion.p>
+      <motion.p
+        className={classes.text}
+        initial="hidden"
+        whileInView="visible"
+        variants={animation}
+      >
+        Our company provides paintless dent repair services throughout Vancouver Island. You can
+        always arrange for our specialist to come to a location convenient for you.
+      </motion.p>
     </Wrapper>
   )
 }
