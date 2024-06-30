@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
 import { motion, useTransform, useSpring, useScroll } from 'framer-motion'
 
 import { VideoModal } from '../../Modal'
@@ -50,7 +49,7 @@ const Button: React.FC = () => {
       <p className={classes.text}>Watch the video</p>
 
       <button onClick={onOpen} className={classes.btn}>
-        <Image src="/images/play-editor.svg" alt="play" width={115} height={115} />
+        <img src="/images/play-editor.svg" alt="play" />
       </button>
       <VideoModal isOpen={isOpen} onClose={onClose} />
     </motion.div>
