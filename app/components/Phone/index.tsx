@@ -7,9 +7,9 @@ import classes from './Phone.module.sass'
 
 const Phone: React.FC = () => {
   return (
-    <button className={classes.btn}>
+    <a href="tel:2508025654" className={classes.btn}>
       <FaPhoneAlt />
-    </button>
+    </a>
   )
 }
 
