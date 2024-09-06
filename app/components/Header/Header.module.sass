@@ -1,9 +1,18 @@
 .container
   display: flex
   justify-content: space-between
-  align-items: flex-end
+  align-items: center
   padding-top: 6px
 
   .logo
     width: 140px
     height: 52.5px
+
+  .phone
+    text-decoration: none
+    color: #ffb800
+    font-size: 2rem
+
+@media screen and (max-width: 640px)
+  .container .phone
+    display: none    

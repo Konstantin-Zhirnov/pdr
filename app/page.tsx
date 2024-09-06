@@ -8,6 +8,7 @@ import { Alert } from '@/app/components/Alert'
 import { Video } from '@/app/components/Video'
 import { Images } from '@/app/components/Images'
 import { Epilog } from '@/app/components/Epilog'
+import { Phone } from './components/Phone'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Images />
       <Cards />
       <Epilog />
+      <Phone />
     </>
   )
 }
