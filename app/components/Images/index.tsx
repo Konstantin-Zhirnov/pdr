@@ -12,7 +12,13 @@ import { imageAnimation } from '@/constants'
 import 'react-photo-view/dist/react-photo-view.css'
 import classes from './Images.module.sass'
 
-const images = ['/images/repair-1.jpg', '/images/repair-2.jpg', '/images/repair-3.jpg']
+const images = [
+  '/images/repair-1.jpg',
+  '/images/repair-2.jpg',
+  '/images/repair-3.jpg',
+  '/images/repair-4.jpg',
+  '/images/repair-5.jpg',
+]
 
 const Images: React.FC = () => {
   return (
@@ -49,7 +55,7 @@ const Images: React.FC = () => {
               variants={imageAnimation}
               className={classes.image_container}
             >
-              <img src={item} className={classes.image} alt="photo" />
+              <img src={item} className={classes.image} alt="paintless dent repair" />
             </motion.div>
           </PhotoView>
         ))}
