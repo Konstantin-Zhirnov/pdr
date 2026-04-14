@@ -2,6 +2,7 @@ import React from 'react'
 import { Roboto_Condensed } from 'next/font/google'
 
 import './globals.css'
+import { Phone } from '@/app/components/Phone'
 
 export const metadata = {
   title: 'Paintless Dent Repair',
@@ -37,6 +38,8 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true} className={RobotoCondensed.className}>
         {children}
+
+        <Phone />
       </body>
     </html>
   )
